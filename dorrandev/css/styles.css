@@ -1,0 +1,133 @@
+p {
+    font-weight: medium;
+    text-align: center;
+    margin-top: 10px;
+}
+
+span {
+    font-size: 20px;
+    color: yellow;
+}
+
+h1{
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    margin-top: 2rem;
+}
+
+svg {
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    width: 100%;
+}
+
+header {
+    font-size: 2rem;
+    text-align: center;
+    padding: 1.5rem;
+    font-weight: bold;
+}
+
+.aplicaciones {
+    display: flex;
+    justify-content: center;
+    gap: 1rem; 
+    align-items: center; 
+}
+
+h2 {
+    text-align: center;
+    color: black;
+    font-weight: bold;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem; 
+    background-color: #2a5eff; 
+    padding: 1rem 0; 
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+iframe {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    height: 500px;
+}
+
+/* form css */
+input {
+    color: black;
+}
+form {
+    background-color: beige;
+    width: 50%;
+    border-radius: 15px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+label {
+    color: black;
+    font-weight: bold;
+    
+}
+legend {
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+    color: chocolate;
+}
+
+button {
+   background-color: blue;
+   color: white;
+   border-radius: 6px;
+}
+
+/* hero section css */
+.hero {
+    position: relative;
+    width: 100%;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+    display: block;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+.text-inside {
+    font-size: 2rem;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}

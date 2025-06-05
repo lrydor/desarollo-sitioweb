@@ -9,6 +9,13 @@ span {
     color: yellow;
 }
 
+.hero-text{
+    text-align: center;
+    color: yellow;
+    font-weight: bold;
+    margin-top: 2rem; 
+}
+
 h1{
     text-align: center;
     color: black;
@@ -47,11 +54,11 @@ h2 {
 
 .menu {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    gap: 4rem; 
     background-color: #2a5eff; 
-    padding: 1rem 0; 
+    padding: 1rem 0;
+    margin-top: 1rem 0; 
 }
 
 .menu a {
@@ -69,36 +76,77 @@ iframe {
     height: 500px;
 }
 
-/* form css */
-input {
-    color: black;
-}
-form {
-    background-color: beige;
-    width: 50%;
-    border-radius: 15px;
-    margin: 0 auto;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
+
+/* custom form */
+.custom-form {
+  background-color: #254090; 
+  padding: 30px;
+  border-radius: 12px;
+  color: white;
+  width: 90%;
+  max-width: 800px;
+  margin: 40px auto;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
 }
 
-label {
-    color: black;
-    font-weight: bold;
-    
+.custom-form h2 {
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 30px;
 }
-legend {
-    align-items: center;
-    text-align: center;
-    padding: 15px;
-    color: chocolate;
+
+.form-row {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-weight: bold;
+  margin-bottom: 6px;
+  color: #fff5e1;
+}
+
+input,
+textarea {
+  width: 100%;
+  background-color: #fdf6ec;
+  border: none;
+  padding: 12px;
+  border-radius: 5px;
+  font-size: 1em;
+  color: #000000;
+  box-sizing: border-box;
+}
+
+textarea {
+  min-height: 200px;
+  resize: vertical;
+  margin-bottom: 20px;
 }
 
 button {
-   background-color: blue;
-   color: white;
-   border-radius: 6px;
+  background-color: #5077c5;
+  color: white;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1em;
+  cursor: pointer;
+  float: right;
+}
+
+button:hover {
+  background-color: #201bb9;
 }
 
 /* hero section css */
@@ -130,4 +178,98 @@ button {
     text-align: center;
     color: white;
     font-weight: bold;
+}
+
+
+
+.container {
+    background-color: aquamarine;
+
+}
+
+/* carousel */
+
+.carousel {
+  width: 100vw;
+  height: 60vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.slides {
+  display: flex;
+  width: 300vw;
+  animation: slide 18s infinite;
+}
+
+.slides img {
+  width: 100vw;
+  height: 100%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+
+.carousel-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  z-index: 2;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.carousel-text p {
+  font-size: 1.3em;
+  margin: 0;
+  color: white;
+  font-weight: bold;
+}
+
+.carousel-text h1 {
+  font-size: 2.5em;
+  margin: 0;
+  color: yellow;
+}
+
+
+@keyframes slide {
+  0%   { transform: translateX(0); }
+  5%   { transform: translateX(0); }
+  33.33% { transform: translateX(-100vw); }
+  38.33% { transform: translateX(-100vw); }
+  66.66% { transform: translateX(-200vw); }
+  71.66% { transform: translateX(-200vw); }
+  100% { transform: translateX(0); }
+}
+.video-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem auto;
+    width: 80vw;
+    max-width: 1200px;
+    height: 60vh;
+}
+.video-section video {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+footer {
+    background-color:#2a5eff; 
+    color: white;
+    text-align: center;
+    padding: 0.5rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }

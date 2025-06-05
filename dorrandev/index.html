@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Pagina</title>
+    <link rel="icon" href="./assets/favicon.ico">
     <link rel="preload" href="./css/styles.css" as="style">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <section>
+  
        <header>Dorran Solis D3V</header>
-    </section>
+   
     <!-- menu section of website - navbar -->
     <section class="menu">
         <a href="index.html">Inicio</a>
@@ -25,29 +26,37 @@
     </section>
     
  
-        <div class="hero">
-        <img src="image1.jpg" alt="Tech IMAGE" class="hero-image">
-        <section class="hero-text">
-            <h1 class="text-inside">Diseñador/DesarrolladorWEB</h1>
-            <!-- map pin icon -->
-            <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="110"
-            height="110"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="#ffcc00"
-            stroke-width="1"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            >
-            <path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
-            <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
-            </svg>
-            <p>Corozal, Belize</p>
-        </section>
+        <section class="carousel">
+  <div class="slides">
+    <img src="./assets/image1.jpg" alt="Imagen 1">
+    <img src="./assets/image2.jpg" alt="Imagen 2">
+    <img src="./assets/image3.jpg" alt="Imagen 3">
+  </div>
 
-    </div>
+    <div class="carousel-text">
+    <p>Corozal, Belize</p>
+    
+    <!-- Ícono ubicación -->
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="60"
+      height="60"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="#ffcc00"
+      stroke-width="1.5"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    >
+      <path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+      <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
+    </svg>
+
+    <h1>Diseñador / Desarrollador WEB</h1>
+  </div>
+
+</section>
+        
     <h1>Mis Servicios</h1>
     <!-- services provided -->
     <section>
@@ -85,32 +94,41 @@
    
     <!-- form section -->
      
-    <section>
+    <section id="contact-form">
+                  <h2>Contact</h2>
+                  <form class="custom-form">
+                          <h2>CONTACT US BY FILLING OUT ALL THE FIELDS</h2>
 
-        <h2>Contacto</h2>
-        <p>Contactanos por este medio!</p>
-        <form>
-            <legend>CONTACTÁNOS LLENANDO TODOS LOS CAMPOS</legend>
-            
-            
-                <label for="name">Nombre</label>
-                <input type="text" id="name" name="name" placeholder="Tu Nombre" required>
-            
-            
-                <label for="email">Telefono</label>
-                <input type="tel" id="phone" name="phone" placeholder="Tu Telefono" required>
-        
-            
-                <label for="email">Correo Electrónico</label>
-                <input type="email" id="email" name="email" placeholder="Tu Correo" required>
-            
-    
-            
-                <label for="message">Mensaje</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
-            
-            <button type="submit">Enviar</button>
-        </form>
-    </section>
+                           <div class="form-row">
+                           <div class="form-group">
+                           <label for="name">Name</label>
+                           <input type="text" placeholder="Your Name" name="name" required>
+                           </div>
+                           <div class="form-group">
+                           <label for="phone">Phone</label>
+                           <input type="tel" placeholder="Your Phone" name="phone" required>
+                           </div>
+                           </div>
+
+                           <div class="form-group">
+                           <label for="email">Email</label>
+                           <input type="email" placeholder="Your Email" name="email" required>
+                           </div>
+
+                           <div class="form-group">
+                           <label for="message">Message</label>
+                           <textarea id="message" placeholder="Your Message" required></textarea>
+                           </div>
+
+                           <div class="form-group align-right">
+                           <button type="submit">SEND</button>
+                          </div>
+                   </form>
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae rerum vero corporis perferendis, consequatur provident. Accusantium ratione, dolorum illum ex cumque vel fugit dignissimos officiis, tempore repellendus, quod nesciunt ipsum.</p>
+        </section>
+
+        <footer class="footer">
+        <p>© 2025 Dorran Solis. Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>

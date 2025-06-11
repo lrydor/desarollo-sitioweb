@@ -1,34 +1,89 @@
-
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Página de proyectos de Dorran Solis, mostrando trabajos realizados"
+    />
+    <!--#1 etiqueta no usada-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Proyectos</title>
-    <link rel="stylesheet" href="./css/styles.css">
-</head>
-<body>
-
+    <link rel="icon" href="./assets/favicon.ico" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="preload" href="./css/styles.css" as="style" />
+  </head>
+  <body>
     <header>Dorran Solis D3V</header>
 
-    <section class="menu">
-        <a href="index.html">Inicio</a>
-    
-        <a href="about.html">Sobre Mi</a>
+    <nav class="menu">
+      <!--#2 etiqueta no usada-->
+      <a href="index.html">Inicio</a>
 
-        <a href="clients.html">Clientes</a>
-          
-        <a href="contact.html">Contacto</a>
-        
-        <a href="slider.html">Slider</a>
+      <a href="about.html">Sobre Mi</a>
 
-        <a href="projects.html">Proyectos</a>
+      <a href="clients.html">Clientes</a>
 
-    </section>
+      <a href="contact.html">Contacto</a>
+
+      <a href="slider.html">Slider</a>
+
+      <a href="projects.html">Proyectos</a>
+    </nav>
 
     <!-- content of the page -->
+    <main>
+      <section class="proyectos">
+        <h1>Mis Proyectos</h1>
+        <p>
+          Aquí puedes ver algunos de los proyectos en los que he trabajado. Cada
+          uno refleja mi enfoque en diseño limpio, desarrollo eficiente y buenas
+          prácticas.
+        </p>
+        <div class="proyectos-lista">
+          <div class="proyecto">
+            <h2>Mclean Broker Website</h2>
+            <p class="descripcion">
+              Plataforma moderna para una aseguradora en Belice. Incluye
+              navegación intuitiva, sección de servicios y contacto con
+              integración de WhatsApp.
+            </p>
+            <ul>
+              <li><strong>Duración:</strong> 2 meses</li>
+              <li>
+                <strong>Tecnologías:</strong> React JS, Tailwind CSS, Vercel
+              </li>
+              <li>
+                <strong>Enlace:</strong>
+                <a href="https://mclean-broker.vercel.app" target="_blank"
+                  >Ver proyecto</a
+                >
+              </li>
+            </ul>
+          </div>
 
-    <section>
-            <h1>Mis Proyectos</h1>
-    </section>
-</body>
+          <div class="proyecto">
+            <h2>Portafolio Personal</h2>
+            <p class="descripcion">
+              Sitio web responsivo para mostrar mis habilidades, proyectos y
+              contacto profesional. Optimizado para SEO y velocidad de carga.
+            </p>
+            <ul>
+              <li><strong>Duración:</strong> 1 mes</li>
+              <li>
+                <strong>Tecnologías:</strong> React, Tailwind CSS, Framer Motion
+              </li>
+              <li>
+                <strong>Enlace:</strong>
+                <a href="">En construción</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Dorran Solis D3V. Todos los derechos reservados.</p>
+    </footer>
+  </body>
 </html>
